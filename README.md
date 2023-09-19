@@ -1,5 +1,5 @@
 # Shopping-APP
-create shopping cart app with vite vue3
+create shopping cart app with vite ,vue3, pinia,axios
 
 - State management with Pinia
 

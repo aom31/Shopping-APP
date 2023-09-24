@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">หน้าแรก</a>
+          <router-link to="/" class="nav-link " aria-current="page" href="#">หน้าแรก</router-link>
         </li>
         <li class="nav-item">
           <a class="nav-link " aria-current="page" href="#">ตะกล้าสินค้า</a>

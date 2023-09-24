@@ -19,7 +19,7 @@
           <h5 class="card-title">{{ product.title }}</h5>
           <p class="card-text">หมวดหมู่ {{ product.category }}</p>
           <p class="card-text">ราคา {{ product.price }}</p>
-          <button class="btn btn-primary mx-2">รายละเอียด</button>
+          <router-link :to="`/product/detail/${product.id}`" class="btn btn-primary mx-2">รายละเอียด</router-link>
           <button class="btn btn-success">เพิ่มลงตะกล้า</button>
         </div>
       </div>

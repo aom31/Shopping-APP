@@ -11,7 +11,7 @@
           <router-link to="/" class="nav-link " aria-current="page" href="#">หน้าแรก</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">ตะกล้าสินค้า</a>
+          <router-link to="/cart" class="nav-link " aria-current="page" href="#">ตะกล้าสินค้า</router-link>
         </li>
         
       </ul>

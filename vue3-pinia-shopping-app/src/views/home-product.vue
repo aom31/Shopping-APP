@@ -20,7 +20,7 @@
           <p class="card-text">หมวดหมู่ {{ product.category }}</p>
           <p class="card-text">ราคา {{ product.price }}</p>
           <router-link :to="`/product/detail/${product.id}`" class="btn btn-primary mx-2">รายละเอียด</router-link>
-          <button class="btn btn-success">เพิ่มลงตะกล้า</button>
+          <button class="btn btn-success" @click="cart_store.add_cart(product.id, product.price)">เพิ่มลงตะกล้า</button>
         </div>
       </div>
     </div>
@@ -33,8 +33,13 @@ import { computed } from "vue";
 //use product store
 import { useProductStore } from "../store/product-store";
 const product_store = useProductStore();
+//use cart store
+import { useCartStore } from "../store/cart";
+const cart_store = useCartStore();
 
 const listproduct = computed(() => product_store.productlist);
+
+
 </script>
 
 <style></style>

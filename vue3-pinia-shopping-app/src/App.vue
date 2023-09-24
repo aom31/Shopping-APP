@@ -13,8 +13,17 @@ import { useProductStore } from "./store/product-store"
 
 const product_store = useProductStore()
 
+//use cart store
+import { useCartStore } from "./store/cart";
+const cart_store = useCartStore();
+
 onMounted(() => {
   product_store.getProducts()
+})
+
+
+onMounted(() => {
+  cart_store.loadFromLocalStorage()
 })
 </script>
 
